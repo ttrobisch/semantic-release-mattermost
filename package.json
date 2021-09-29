@@ -1,7 +1,11 @@
 {
   "name": "semantic-release-mattermost",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "semantic-release plugin to get release notifications on mattermost via webhooks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttrobisch/semantic-release-mattermost.git"
+  },
   "main": "dist/index.js",
   "files": [
     "dist",
