@@ -29,7 +29,8 @@ Add the plugin to your semantic-release config:
     [
       "semantic-release-slack-bot",
       {
-        "webhook": "https://mattermost.example.com"
+        "webhook": "https://mattermost.example.com",
+        "username": "semantic-release"
       }
     ]
   ]

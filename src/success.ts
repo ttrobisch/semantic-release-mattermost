@@ -10,6 +10,7 @@ export async function success(config: Config, context: Context) {
     const hook = context.env.MATTERMOST_WEBHOOK || config.webhook;
     const message = {
         text: `The ${nextRelease.type} version "${nextRelease.version}" has been released.\n\n${nextRelease.notes}`,
+        username: config.username
     }
 
     await webhook({

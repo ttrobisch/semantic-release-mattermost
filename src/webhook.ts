@@ -5,6 +5,7 @@ type WebhookProps = {
     hook: string;
     message: {
         text: string;
+        username?: string;
     };
     logger: Context['logger'];
 };
