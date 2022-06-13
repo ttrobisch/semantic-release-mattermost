@@ -12,12 +12,6 @@ Add the plugin to your npm-project
 npm install semantic-release-discord
 ```
 
-### Yarn
-
-```shell
-yarn add semantic-release-discord
-```
-
 ## Usage
 
 Add the plugin to your semantic-release config:
