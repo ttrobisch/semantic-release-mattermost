@@ -17,7 +17,7 @@ jobs:
           node-version: "lts/*"
 
       - name: Install NPM dependencies
-        run: npm ci
+        run: yarn
 
       - name: Generate Release
         env:
