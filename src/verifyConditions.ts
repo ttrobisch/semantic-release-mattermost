@@ -9,7 +9,7 @@ export function verifyConditions(config: Config, context: Context) {
         logger.error("The plugin @semantic-release/release-notes-generator was not found.");
         errors.push('missing-release-notes-generator');
     }
-    if (!env.MATTERMOST_WEBHOOK && !config.webhook) {
+    if (!env.DISCORD_WEBHOOK && !config.webhook) {
         logger.error("No webhook found in config or env environment variable \"MATTERMOST_WEBHOOK\".", 'no-webhook');
         errors.push('missing-hook');
     }

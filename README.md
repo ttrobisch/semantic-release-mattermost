@@ -1,6 +1,6 @@
-# semantic-release-mattermost
+# semantic-release-discord
 
-semantic-release plugin to get release notifications on mattermost via webhooks
+semantic-release plugin to get release notifications on discord via webhooks
 
 ## Install
 
@@ -9,13 +9,13 @@ Add the plugin to your npm-project
 ### NPM
 
 ```shell
-npm install semantic-release-mattermost
+npm install semantic-release-discord
 ```
 
 ### Yarn
 
 ```shell
-yarn add semantic-release-mattermost
+yarn add semantic-release-discord
 ```
 
 ## Usage
@@ -27,9 +27,9 @@ Add the plugin to your semantic-release config:
   "plugins": [
     "@semantic-release/release-notes-generator",
     [
-      "semantic-release-slack-bot",
+      "semantic-release-discord",
       {
-        "webhook": "https://mattermost.example.com",
+        "webhook": "https://discord.example.com",
         "username": "semantic-release"
       }
     ]
@@ -39,5 +39,5 @@ Add the plugin to your semantic-release config:
 
 ### Environment variable
 
-If the ```MATTERMOST_WEBHOOK``` environment variable is defined in your environment,
+If the ```DISCORD_WEBHOOK``` environment variable is defined in your environment,
 it will be used instead of the webhook provided in the config.

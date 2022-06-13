@@ -1,10 +1,10 @@
 {
-  "name": "semantic-release-mattermost",
-  "version": "1.1.0",
-  "description": "semantic-release plugin to get release notifications on mattermost via webhooks",
+  "name": "semantic-release-discord",
+  "version": "1.0.0",
+  "description": "semantic-release plugin to get release notifications on discord via webhooks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ttrobisch/semantic-release-mattermost.git"
+    "url": "https://github.com/guiadco/semantic-release-discord"
   },
   "main": "dist/index.js",
   "files": [
@@ -16,7 +16,7 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "Tobias Trobisch",
+  "author": "Adrien DEVIENNE",
   "license": "MIT",
   "devDependencies": {
     "@types/semantic-release": "^17.2.2",
