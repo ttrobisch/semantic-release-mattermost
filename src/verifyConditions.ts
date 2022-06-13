@@ -10,7 +10,7 @@ export function verifyConditions(config: Config, context: Context) {
         errors.push('missing-release-notes-generator');
     }
     if (!env.DISCORD_WEBHOOK && !config.webhook) {
-        logger.error("No webhook found in config or env environment variable \"MATTERMOST_WEBHOOK\".", 'no-webhook');
+        logger.error("No webhook found in config or env environment variable \"DISCORD_WEBHOOK\".", 'no-webhook');
         errors.push('missing-hook');
     }
 
