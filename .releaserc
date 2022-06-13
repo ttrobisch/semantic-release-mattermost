@@ -1,6 +1,9 @@
 {
   "release": {
-    "branches": ["master", "next"]
+    "branches": [
+      "master",
+      "next"
+    ]
   },
   "ci": "false",
   "plugins": [
@@ -9,7 +12,11 @@
       {
         "preset": "angular",
         "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+          "noteKeywords": [
+            "BREAKING CHANGE",
+            "BREAKING CHANGES",
+            "BREAKING"
+          ]
         }
       }
     ],
@@ -18,24 +25,33 @@
       {
         "preset": "angular",
         "parserOpts": {
-          "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+          "noteKeywords": [
+            "BREAKING CHANGE",
+            "BREAKING CHANGES",
+            "BREAKING"
+          ]
         },
         "writerOpts": {
-          "commitsSort": ["subject", "scope"]
+          "commitsSort": [
+            "subject",
+            "scope"
+          ]
         }
       }
     ],
     "@semantic-release/git",
     [
-      "@semantic-release/npm", {
-      "npmPublish": false,
-      "tarballDir": "dist"
-    }
+      "@semantic-release/npm",
+      {
+        "npmPublish": false,
+        "tarballDir": "dist"
+      }
     ],
-    ["@semantic-release/github", {
-      "assets": "dist/*.tgz"
-    }
-  ]
-  ] 
+    [
+      "@semantic-release/github",
+      {
+        "assets": "dist/*.tgz"
+      }
+    ]
   ]
 }
