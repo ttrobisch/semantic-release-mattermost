@@ -23,6 +23,7 @@ Add the plugin to your semantic-release config:
     [
       "semantic-release-discord",
       {
+        "custom_message": "my custom message",
         "webhook": "https://discord.example.com",
         "username": "semantic-release"
       }
@@ -34,8 +35,11 @@ Add the plugin to your semantic-release config:
 ### Environment variable
 
 If the ```DISCORD_WEBHOOK``` environment variable is defined in your environment,
-it will be used instead of the webhook provided in the config.
+it will be used instead of the `webhook` provided in the config.
+
+If the ```DISCORD_CUSTOM_MESSAGE``` environment variable is defined in your environment,
+it will be used instead of `the custom_message` provided in the config.
 
 ### Thanks
 
-- ttrobisch/semantic-release-mattermost
+- @ttrobisch/semantic-release-mattermost

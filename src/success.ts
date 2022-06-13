@@ -4,9 +4,9 @@ import { Context } from "semantic-release";
 import { webhook } from './webhook';
 
 function preparemessage(config: Config, context: Context) {
-  const { nextRelease, logger } = context;
+  const { env, nextRelease, logger } = context;
   logger.log('prepare message.');
-  if (!config.custom_message) {
+  if (!env.DISCORD_CUSTOM_MESSAGE || !config.custom_message) {
     logger.log('prepare custom message.');
     const message = {
       text: config.custom_message,
