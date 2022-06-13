@@ -41,3 +41,7 @@ Add the plugin to your semantic-release config:
 
 If the ```DISCORD_WEBHOOK``` environment variable is defined in your environment,
 it will be used instead of the webhook provided in the config.
+
+### Thanks
+
+- ttrobisch/semantic-release-mattermost
