@@ -27,7 +27,7 @@ Add the plugin to your semantic-release config:
   "plugins": [
     "@semantic-release/release-notes-generator",
     [
-      "semantic-release-slack-bot",
+      "semantic-release-mattermost",
       {
         "webhook": "https://mattermost.example.com",
         "username": "semantic-release"
