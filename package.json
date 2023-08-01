@@ -1,10 +1,10 @@
 {
-  "name": "semantic-release-mattermost",
+  "name": "plk-semantic-release-mattermost",
   "version": "1.1.1",
-  "description": "semantic-release plugin to get release notifications on mattermost via webhooks",
+  "description": "fork from semantic-release plugin to get release notifications on mattermost via webhooks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ttrobisch/semantic-release-mattermost.git"
+    "url": "https://github.com/kpolischuk/semantic-release-mattermost.git"
   },
   "main": "dist/index.js",
   "files": [

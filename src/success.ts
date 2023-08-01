@@ -8,7 +8,7 @@ export async function success(config: Config, context: Context) {
     logger.log('Executing webhook.');
 
     const hook = context.env.MATTERMOST_WEBHOOK || config.webhook;
-    const projectName = context.env.PROJECT_NAME || config.name;
+    const projectName = context.env.CI_PROJECT_NAME || config.name;
     const message = {
         text: `${projectName ? (projectName + ': ') : ''}The ${nextRelease.type} version "${nextRelease.version}" has been released.\n\n${nextRelease.notes}`,
         username: config.username
