@@ -31,7 +31,8 @@ Add the plugin to your semantic-release config:
       {
         "webhook": "https://mattermost.example.com",
         "username": "semantic-release",
-        "name": "project name"
+        "name": "project name",
+        "channel": "channel-name"
       }
     ]
   ]
@@ -45,3 +46,5 @@ it will be used instead of the ```webhook``` provided in the config.
 
 If the ```CI_PROJECT_NAME``` environment variable is defined in your environment,
 it will be used instead of the ```name``` provided in the config.
+
+```channel``` and ```username``` can be optionally used to override webhook details.

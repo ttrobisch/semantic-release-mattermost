@@ -11,6 +11,7 @@ export async function success(config: Config, context: Context) {
     const projectName = context.env.CI_PROJECT_NAME || config.name;
     const message = {
         text: `${projectName ? (projectName + ': ') : ''}The ${nextRelease.type} version "${nextRelease.version}" has been released.\n\n${nextRelease.notes}`,
+        channel: config.channel,
         username: config.username
     }
 
