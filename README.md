@@ -9,13 +9,13 @@ Add the plugin to your npm-project
 ### NPM
 
 ```shell
-npm install plk-semantic-release-mattermost
+npm install semantic-release-mattermost
 ```
 
 ### Yarn
 
 ```shell
-yarn add plk-semantic-release-mattermost
+yarn add semantic-release-mattermost
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Add the plugin to your semantic-release config:
   "plugins": [
     "@semantic-release/release-notes-generator",
     [
-      "plk-semantic-release-mattermost",
+      "semantic-release-mattermost",
       {
         "webhook": "https://mattermost.example.com",
         "username": "semantic-release",
